@@ -1,0 +1,84 @@
+
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link href="login.css" rel="stylesheet" type="text/css">
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="icons/expenses.png">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- menu.js stylesheet -->
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="examples.css">
+
+    <script type="text/javascript" src="app.js"></script>
+
+
+
+<title>Login</title>
+
+</head>
+<body>
+
+     <!-- menu -->
+     <nav id="menu" class="menu-horizontal menu-dropdown menu-expandable">
+        <ul>
+            <li>
+              <a href="#">Strona Główna</a>
+              <ul class="ui-menu-sub">
+                <li><a href="/index.html">Strona Główna</a></li>
+                <li><a href="/login.html">Logowanie</a></li>
+                <li><a href="/description.html">Opis Projektu</a></li>
+            </ul>
+            </li>
+            
+            <li>
+                <a href="#">Operacje</a>
+                <ul class="ui-menu-sub">
+                    <li><a href="/page_1.html">Eksport  csv</a></li>
+                </ul>
+            </li>
+            <li><a href="/contact.html">Kontakt</a>
+                <ul class="ui-menu-sub">
+                    <li><a href = "mailto:adambar835@student.polsl.pl ">Adam Bartoszynski</a></li>
+                    <li><a href = "mailto:domidob156@student.polsl.pl ">Dominik Dobija</a></li>
+                    </ul>
+              </li>
+        </ul>
+    </nav>
+    <!-- /menu -->
+    
+
+    <ul class="topmenu">
+       
+          <ul class="submenu"><br><br><br><br><br></ul>
+      
+      </ul>
+
+</header>
+<!-- dependencies -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="menu.js"></script>
+
+<!-- run the script -->
+<script>
+// create menu
+$('#menu').menu({
+    expand: {
+        enabled: true,
+        button: false,
+        single: true,
+        blur: true
+    }
+});
+</script>
+
+
+ <!--Div that will hold the pie chart-->
+ <div id="chart_div" ></div>
+
+</body>
+</html>
